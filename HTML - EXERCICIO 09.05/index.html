@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Kumbh+Sans:wght@300;500;600&family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+</head>
+<body>
+
+    <header>
+        <nav class="header__nav">
+            <ul>
+                <li><a class="header__nav__item" href="#home">Home</a></li>
+                <li><a class="header__nav__item" href="#sobre">Sobre</a></li>
+                <li><a class="header__nav__item" href="#contato"e>Contato</a></li>
+            </ul>
+        </nav>
+
+        <section id = "home">
+            <div class ="titulo__home">
+                <h1>Bem vindo a um Novo Universo!</h1>
+                <h2>Diferentes mundos para diferentes pessoas</h2>
+                <div class = "titulo__paragrafo__btn">
+                    <p class = "titulo__paragrafo">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Inventore asperiores deleniti, explicabo ullam.
+                    </p>
+                    <button class = "titulo__btn">Explore</button>
+                </div>
+            </div>
+                <div class ="titulo__home__right">
+                    <img src="./imagens/astronauta.svg" alt="Capacete de astronauta" width="200" height="200">
+                </div>
+            
+        </section>
+
+        <section id = "aboutMe">
+            <div class ="aboutMe__img">
+                <img src="./imagens/DSCF0212 (1)-min.jpg" alt="Capacete de astronauta" width="200" height="200">
+            </div>
+
+            <div class ="aboutMe__sobre">
+                <h1>Quem sou eu!</h1>
+                <div>
+                    <p class ="aboutMe__sobre__paragrafo">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Inventore asperiores deleniti, explicabo ullam.
+                        Inventore asperiores deleniti, explicabo ullam.
+                        Inventore asperiores deleniti, explicabo ullam.
+                    </p>
+                <div class = "aboutMe__sobre__botoes">
+                    <button class = "aboutMe__sobre__btn">GitHub</button>
+                    <h2>Seguidores</h2>
+                    <h2>Seguidores</h2>
+                </div>
+                </div>  
+            </div>
+        </section>
+
+        <section id = "contato">
+            <div class ="contato__textos">
+                <h1>Me contate</h1>
+                <div class = contato__paragrafo>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Inventore asperiores deleniti, explicabo ullam, ratione blanditiis similique, 
+                        nobis laborum sunt pariatur deserunt! 
+                        Saepe error dolor expedita dignissimos illum natus dolorum commodi.
+                    </p>
+                </div>
+
+                <div class = "contato__icones">
+                    <img src="./imagens/github.svg" alt="Icone do GitHub">
+                    <img src="./imagens/instagram.svg" alt="Icone do Instagram">
+                    <img src="./imagens/linkedin.svg" alt="Icone do Linkedin">   
+                </div>   
+            </div>
+
+            <div class="contato__formulario">
+    
+                <form class="contato__formulario__form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+        
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="3" name="mensagem" rows="4" required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </header>
+
+    <footer>
+        <p>Desenvolvido por Igor Fernandes</p>
+    </footer>
+    
+</body>
+</html>

@@ -23,17 +23,17 @@ body {
     flex-direction: column;
   }
   
-  .header__nav__item{
-    font-size: 15px;
-    font-family: "Krona One", sans-serif;
-    font-weight: 800;
-    color: #fafafa;
-    text-decoration: none;
-  }
-  
-  .header__nav__item:hover {
-    color: #810103;
-  }
+    .header__nav__item{
+      font-size: 15px;
+      font-family: "Krona One", sans-serif;
+      font-weight: 800;
+      color: #fafafa;
+      text-decoration: none;
+    }
+    
+    .header__nav__item:hover {
+      color: #810103;
+    }
   
   
   .header__nav ul {
@@ -103,12 +103,16 @@ body {
   
   footer {
     height: 50px;
-    background-color: #000000;
+    background-color: #441f88;
     color: #fafafa;
-    text-align: center;
     font-size: 10px;
     font-family: "Krona One", sans-serif;
     font-weight: 400;
-    margin-top: 50px;
-  }
+
+    
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
+  
   

@@ -1,0 +1,325 @@
+:root {
+    --roxo-escuro: #441f88;
+    --roxo-claro: #5c20c6;
+    --branco: #f9f9f9;
+    --cinza: #cccccc;
+    --preto: #171717;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--cinza);
+  }
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: var(--roxo-escuro);
+    width: 100%;
+    height: 50px;
+  }
+
+  .header__nav ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 200px;
+
+  }
+
+  .header__nav__item{
+    font-size: 10px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 600;
+    color: var(--branco);
+    text-decoration: none;
+    
+  }
+
+  .header__nav__item:hover {
+    color: var(--cinza);
+  }
+
+  #home {
+    width: 70%;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px;
+  }
+
+  .titulo__home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  .titulo__paragrafo__btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -15px;
+  }
+
+.titulo__btn {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--roxo-escuro);
+    color: var(--branco);
+    font-size: 12px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 300;
+
+}
+
+.titulo__btn:hover {
+    background-color: var(--roxo-claro);
+}
+  .titulo__home h1 {
+
+    color: var(--preto);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600; 
+    text-align: center;
+
+  }
+
+  .titulo__home h2 {
+
+    color: var(--preto);
+    font-size: 25px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 600; 
+    text-align: center;
+
+  }
+
+  .titulo__home p {
+    
+    color: var(--preto);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500; 
+  }
+
+  .titulo__home__right {
+    display: flex;            
+    justify-content: center;    
+    align-items: center;        
+    height: 100%;               
+    padding: 20px;
+  }
+
+  .titulo__home__right img {
+    width: 350px;
+    height: 350px;
+  }
+
+  #aboutMe {
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+  }
+
+  .aboutMe__sobre {
+    display: flex;      
+    flex-direction: column;
+    width: 60%;      
+    justify-content: center;    
+    align-items: center; 
+  }
+
+  .aboutMe__sobre h1 {
+    color: var(--preto);
+    font-size: 25px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 600; 
+    text-align: center;
+  }
+
+  .aboutMe__sobre p {
+    color: var(--preto);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .aboutMe__img {
+    width: 40%;
+    height: 100%; 
+    
+  }
+
+  .aboutMe__img img {
+    border: 5px solid var(--roxo-escuro); 
+    border-radius: 50%;                   
+    width: 350px;                        
+    height: 350px;                       
+    object-fit: cover;
+    margin-top: -50px;
+  }
+
+  .aboutMe__sobre__botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .aboutMe__sobre__botoes h2 {
+
+    color: var(--preto);
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+
+  }
+
+  .aboutMe__sobre__botoes button {
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--roxo-escuro);
+    color: var(--branco);
+    font-size: 10px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 300;
+  }
+
+
+  #contato {
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px;
+    margin-top: 150px;
+  }
+
+  .contato__textos h1 {
+
+    color: var(--preto);
+    font-size: 25px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 600; 
+    text-align: center;
+  }
+
+  .contato__textos {
+    width: 60%;
+  }
+
+  .contato__formulario {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .contato__paragrafo p {
+
+    color: var(--preto);
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: start;
+    gap: 3px;
+  }
+
+
+  .contato__icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .contato__icones img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contato__formulario__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: start;
+
+  }
+
+ 
+.contato__formulario__form input,
+.contato__formulario__form textarea {
+    background-color: var(--branco);        
+    border: 1px soli var(--branco);       
+    padding: 10px;   
+    border-radius: 15px;               
+    font-size: 14px;                
+    color: var(--preto);                  
+}
+
+.contato__formulario__form button {
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--roxo-escuro);
+    color: var(--branco);
+    font-size: 10px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 300;
+  }
+
+  .contato__formulario__form button:hover {
+    background-color: var(--roxo-claro);
+  }
+
+
+footer {
+    height: 60px;
+    background-color: var(--roxo-escuro);
+    color: var(--branco);
+    font-size: 10px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+
+    
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
