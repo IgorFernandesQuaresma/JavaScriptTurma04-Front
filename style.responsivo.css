@@ -8,6 +8,8 @@
        background-color: var(--roxo-escuro);
        padding: 25px;
        height: auto;
+       width: auto;
+       
      }
    
      .header__nav__ul {
@@ -75,12 +77,13 @@
       margin: 0 auto;
       width: auto;
       padding: 30px;
+      
     
     
     } 
 
     .titulo__home {
-      width: auto ;
+      width: 60% ;
       box-sizing: border-box;
       margin-bottom: 30px;
       
@@ -247,5 +250,20 @@
     height: 30px;
     font-size: 10px;
   }
+
+  footer {
+    width: auto;
+    height: 60px;
+    background-color: var(--roxo-escuro);
+    color: var(--branco);
+    font-size: 10px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+
+    
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
 
 }
