@@ -1,0 +1,251 @@
+@media screen and (min-width: 350px) and (max-width: 450px) {
+
+    .header__nav {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color: var(--roxo-escuro);
+       padding: 10px;
+       height: auto;
+     }
+   
+     .header__nav__ul {
+       display: none;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 5px;
+       padding: 5px; 
+       margin: 5px; 
+       width: 50%; 
+       transition: display 0.3s ease
+       
+     }
+
+     .header__nav__ul.active{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      padding: 5px; 
+      margin: 5px; 
+      width: 50%;
+      transition: display 0.3s ease     
+    }
+
+     .header__nav__item {
+       font-size: 10px;
+       
+     }
+
+     .hamburguer {
+      border: none;
+      background: none;
+      border-top: 3px solid var(--branco);
+      cursor: pointer;
+      display: block;
+    }
+  
+    .hamburguer::after,
+    .hamburguer::before {
+      content: " ";
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: var(--branco);
+      margin-top: 5px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+   }
+
+
+   /* home */
+   @media screen and (min-width: 350px) and (max-width: 450px) {
+
+    #home {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      text-align: center; 
+      margin: 0 auto;
+      width: auto;
+      padding: 30px;
+    
+    
+    } 
+
+    .titulo__home {
+      width: auto ;
+      box-sizing: border-box;
+      margin-bottom: 30px;
+      
+    }
+
+    .titulo__home__right {
+      display: flex;            
+      justify-content: center;    
+      align-items: center; 
+      margin-bottom: -30px;
+      
+    }
+
+    .titulo__home__right img {
+    width: 150px;
+    height: 150px;
+  }
+
+    .titulo__home h1 { 
+    font-size: 10px;
+  }
+
+    .titulo__home h2 { 
+    font-size: 15px;
+  }
+
+  .titulo__home p { 
+    font-size: 10px;
+  }
+
+  .titulo__btn { 
+      width: 100px;
+      height: 30px;
+   }
+
+   .titulo__btn { 
+    font-size: 8px;
+   }
+
+  }
+
+
+  /* aboutMe */
+  @media screen and (min-width: 350px) and (max-width: 450px) {
+    #aboutMe {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: auto;
+      padding: 30px;
+      margin-top: 100px;
+
+     
+    } 
+
+    .aboutMe__img img{
+      display: flex;
+      justify-content: center;
+      width: 100px;
+      height: 100px; 
+      margin: 0 auto;
+      
+    }
+
+    .aboutMe__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 120px;
+      
+    }
+
+    .aboutMe__sobre {
+      width: 100%;
+    }
+
+    .aboutMe__sobre h1 {
+      font-size: 15px;     
+    }
+  
+    .aboutMe__sobre p {    
+      font-size: 10px;
+    }
+
+    .aboutMe__sobre__botoes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .aboutMe__sobre__botoes a {
+      color: var(--branco);
+      font-size: 8px;
+      font-family: "Krona One", sans-serif;
+      font-weight: 300;
+      text-decoration: none;
+    }
+
+    .aboutMe__sobre__botoes button {
+      width: 100px;
+      height: 30px;
+      font-size: 8px;
+    }
+
+    .aboutMe__sobre__botoes h2 {
+      font-size: 10px;
+    }
+
+
+  }
+
+
+  /* contato */
+
+  @media screen and (min-width: 350px) and (max-width: 450px) {
+    #contato {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: auto;
+      margin: 0 auto; 
+      padding: 30px;
+  }
+
+  .contato__textos {
+    width: 100%;
+  }
+
+  .contato__textos h1 {
+    font-size: 15px;
+  }
+
+  .contato__paragrafo p {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .contato__icones img {
+    width: 40px;
+    height: 40px;
+
+  }
+
+  .contato__formulario {
+    width: 60%;
+  }
+
+  .contato__formulario__form input,
+.contato__formulario__form textarea {     
+    padding: 10px;   
+    border-radius: 15px;               
+    font-size: 10px;                
+    color: var(--preto);                  
+}
+
+  .contato__formulario__form button {
+    height: 30px;
+    font-size: 10px;
+  }
+
+}

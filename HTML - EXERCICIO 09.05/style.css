@@ -15,19 +15,19 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: end;
+    align-items: center;
     background-color: var(--roxo-escuro);
     width: 100%;
     height: 50px;
   }
 
-  .header__nav ul {
+  .header__nav__ul {
     list-style: none;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     gap: 15px;
     margin-right: 200px;
-
   }
 
   .header__nav__item{
@@ -43,8 +43,28 @@ body {
     color: var(--cinza);
   }
 
+  .hamburguer {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid var(--branco);
+    cursor: pointer;
+  }
+
+  .hamburguer::after,
+  .hamburguer::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--branco);
+    margin-top: 5px;
+
+  }
+
+
+
   #home {
-    width: 70%;
     height: 350px;
     margin: 0 auto;
     display: flex;
@@ -60,6 +80,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 50%;
+    
   }
 
   .titulo__paragrafo__btn {
@@ -124,6 +145,7 @@ body {
     align-items: center;        
     height: 100%;               
     padding: 20px;
+    
   }
 
   .titulo__home__right img {
@@ -131,6 +153,7 @@ body {
     height: 350px;
   }
 
+  
   #aboutMe {
     width: 70%;
     height: 200px;
@@ -187,6 +210,14 @@ body {
     justify-content: space-around;
   }
 
+  .aboutMe__sobre__botoes a {
+    color: var(--branco);
+    font-size: 12px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
   .aboutMe__sobre__botoes h2 {
 
     color: var(--preto);
@@ -210,7 +241,9 @@ body {
     font-family: "Krona One", sans-serif;
     font-weight: 300;
   }
-
+  .aboutMe__sobre__botoes button:hover {
+    background-color: var(--roxo-claro);
+  }
 
   #contato {
     width: 70%;
@@ -267,7 +300,12 @@ body {
   .contato__icones img {
     width: 60px;
     height: 60px;
+    transition: fill 0.3s, opacity 0.3s;
   }
+
+  .contato__icones img:hover {
+    opacity: 0.7;
+}
 
   .contato__formulario__form {
     display: flex;
@@ -308,6 +346,7 @@ body {
   .contato__formulario__form button:hover {
     background-color: var(--roxo-claro);
   }
+
 
 
 footer {
