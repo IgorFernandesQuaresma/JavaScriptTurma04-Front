@@ -47,7 +47,7 @@
 
         <section id = "aboutMe">
             <div class ="aboutMe__img">
-                <img src="./imagens/DSCF0212 (1)-min.jpg" alt="Capacete de astronauta" width="200" height="200">
+                <img class ="aboutMe__img_link" src="" alt="Capacete de astronauta" width="200" height="200">
             </div>
 
             <div class ="aboutMe__sobre">
@@ -60,10 +60,10 @@
                         Inventore asperiores deleniti, explicabo ullam.
                     </p>
                 <div class = "aboutMe__sobre__botoes">
-                    <button class="aboutMe__sobre__btn"><a href="https://github.com/IgorFernandesQuaresma" target="_blank">GitHub</a></button>
+                    <button class="aboutMe__sobre__btn"><a class="aboutMe__sobre__btn__link" href="" target="_blank">GitHub</a></button>
 
-                    <h2 class = "seguidores">Seguidores</h2>
-                    <h2 class="seguindo">Seguidores</h2>
+                    <h2 class = "seguidores"></h2>
+                    <h2 class="seguindo"></h2>
                 </div>
                 </div>  
             </div>
@@ -98,13 +98,15 @@
     
                 <form class="contato__formulario__form">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="text" id="nome" name="nome" onkeyup="validaForm()" required>
+                    <div id = "nome_msg"></div>
         
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email"  onkeyup="validaForm()" required>
+                    <div id = "email_msg"></div>
         
                     <label for="assunto">Assunto:</label>
-                    <input type="text" id="assunto" name="assunto" required>
+                    <input type="text" id="assunto" name="assunto" maxlength="100" required>
         
                     <label for="mensagem">Mensagem:</label>
                     <textarea id="mensagem" rows="3" name="mensagem" rows="4" required></textarea>
@@ -122,5 +124,6 @@
         <p>Desenvolvido por Igor Fernandes</p>
     </footer>
     <script src="./script.js"></script>
+    <script src="./scriptValidacao.js"></script>
 </body>
 </html>
